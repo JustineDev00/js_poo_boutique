@@ -57,6 +57,17 @@ export class DataHelper {
         }
     }
 
+    update(table, model){ //table : nom de ligne du localStorage à modifier; model : objet précis que l'on a modifié (voir  les fichiers model.js)
+        const data = JSON.parse(localStorage.getItem('data')); //on récupère l'ensemble des données du local storage; les données sont sous la forme d'objets quelconques 
+        const row = data[table + "Data"]?.find(item => item.id == model.id); //on récupère l'ensemble des données de la table passée en paramètre (data[table + "Data"]) PUIS on sélectionne uniquement l'objet à modifier à l'aide de find() et de l'id de l'objet
+        for (const key in row){
+            row[key] = model[key]
+        };
+         //on remplace l'ensemble des valeurs de row par les valeurs de l'objet que l'on a modifié (model)
+        localStorage.setItem("data", JSON.stringify(data)); //on sauvegarde l'ensemble de la base de données récupérée dans le localStorage, ce qui permet de sauvegarder les modifications effectuées à la ligne précédente
+
+    }
+
     
 
 

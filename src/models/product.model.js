@@ -21,4 +21,8 @@ export class Product {
         return category;
     }
 
+    setProp(key, value){ //key : nom de la propriété de l'objet; value : valeur que l'on va assigner à la propriété key
+        this[key] = value; //key est variable, il est donc mis en crochet (comme l'index d'un array)
+    }
+
 }

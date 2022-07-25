@@ -14,7 +14,7 @@ import { Category } from "./models/category.model";
 import { Product } from "./models/product.model";
 
 let data = new DataHelper(["category", "product"]);
-data.initDataStorage();
+// data.initDataStorage();
 
 let catEx1 = new Category({ "id": 6, "title": "adipiscing lorem", "description": "Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.", "image": "https://picsum.photos/1006/600/400" },);
 
@@ -23,6 +23,11 @@ let ProdEx1 = new Product({ "id": 82, "title": "non", "price": 336.4, "descripti
 
 
 ProdEx1.getCategory();
+
+let ProdEx2 = data.getOne("product", '87');
+ProdEx2.setProp('title', 'blablablablabla');
+data.update("product", ProdEx2);
+console.log(ProdEx2);
 let catEx1Products = catEx1.getProductList();
 
 let allcats = data.getAll("category");
