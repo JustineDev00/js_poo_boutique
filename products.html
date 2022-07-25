@@ -1,59 +1,75 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.2.0-beta1 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/boutique.css">
-  </head>
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <ul class="nav navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Accueil <span class="visually-hidden">(current)</span></a>
-        </li>
-      </ul>
-  
-  
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/boutique.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Ma super boutique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Accueil <span class="visually-hidden">(current)</span></a>
+          </li>
+        </ul>
+      </div>
       <li class="nav-item nav-item-template" hidden>
         <a class="nav-link" href="products.html"></a>
       </li>
-    </nav>
+    </div>
+  </nav>
 
 
-    
-    <div class="container">
-      <div class="row">
-      </div>
+
+  <div class="container">
+    <div class="row">
+    </div>
   </div>
-  
+
   <div class="col-sm-12 col-md-6 col-lg-4 mt-5 mb-5 card-template" hidden>
     <div class="card h-100">
       <img class="card-img-top" src="holder.js/100x180/" alt="Title">
       <div class="card-body">
         <h4 class="card-title">Title</h4>
-        <div class="d-flex">
-        <p class="card-text me-auto" id="description">Text</p>
-        <p class="card-text ms-auto" id="price">price</p></div>
+        <p class="card-text" id="description">Text</p>
+
+      </div>
+      <div class="card-footer d-flex bg-white">
+        <button type="button" class="btn btn-dark ms-auto" id="price">Button</button>
       </div>
     </div>
+  </div>
   </div>
 
   <footer class="container-fluid bg-light d-flex justify-content-center mt-5">
     <p class="m-5">JS POO boutique</p>
   </footer>
 
-   
-     <script src="src/products.js" type="module"></script>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  </body>
+  <script src="src/products.js" type="module"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
-
