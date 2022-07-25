@@ -49,8 +49,9 @@
         <p class="card-text" id="description">Text</p>
 
       </div>
-      <div class="card-footer d-flex bg-white">
-        <button type="button" class="btn btn-dark ms-auto" id="price">Button</button>
+      <div class="card-footer d-flex bg-white justify-content-end">
+        <button type="button" class="btn btn-dark" id="price">Button</button>
+        <button type="button" class="btn btn-danger ms-2">Buy me</button>
       </div>
     </div>
   </div>
@@ -59,6 +60,29 @@
   <footer class="container-fluid bg-light d-flex justify-content-center mt-5">
     <p class="m-5">JS POO boutique</p>
   </footer>
+
+  <div class="offcanvas offcanvas-end show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasLabel">Add to cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!--content for item goes here: name product, price, pick quantity, show final price-->
+      <form action="post">
+        <div class="mb-3">
+        <p id="title" class="form-text">Title of item</p>
+        <label for="numberofitems" class="form-label">Choose quantity:</label>
+        <input type="number" name="numberofitems" id="numberofitems" class="form-control">
+      </div>
+      <div class="mb-3">
+        <p id="totalprice">Total Price : </p>
+      </div>
+      <div class="mb-3">
+        <input type="submit" class="btn btn-danger" value="Add to cart">
+      </div>
+      </form>
+    </div>
+  </div>
 
 
   <script src="src/products.js" type="module"></script>
