@@ -1,13 +1,11 @@
 import {DataHelper} from "../helper/datahelper.helper.js";
+import { BaseModel } from "./baseModel.model.js";
 
-export class Category{
-    id = -1;
-    title = "";
-    description = "";
-    image = "url";
+export class Category extends BaseModel{
 
     constructor(props){
-        Object.assign(this, props);
+        super(props); //récupère les informations enregistrées dans l'objet de classe BaseModel (obtenue grâce à l'appel de Objet.assign(this, props))
+        this.assign(props); //appelle la fonction héritée de la classe mère BaseModel; relit les données de la ligne de données et ajoute éventuellement aux propriétés de l'objet les valeurs des propriétés propres à la classe fille
     };
 
 
@@ -20,7 +18,5 @@ export class Category{
 
     };
 
-    setProp(key, value){ //key : nom de la propriété de l'objet; value : valeur que l'on va assigner à la propriété key
-        this[key] = value; //key est variable, il est donc mis en crochet (comme l'index d'un array)
-    }
+
 }
