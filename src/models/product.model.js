@@ -1,5 +1,5 @@
-import { DataHelper } from "../helper/datahelper.helper";
-import { Category } from "./category.model";
+import { DataHelper } from "../helper/datahelper.helper.js";
+import { Category } from "./category.model.js";
 
 
 export class Product {

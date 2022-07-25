@@ -1,6 +1,6 @@
-import { DataHelper } from "./helper/datahelper.helper";
-import { Category } from "./models/category.model";
-import { Product } from "./models/product.model";
+import { DataHelper } from "./helper/datahelper.helper.js";
+// import { Category } from "./models/category.model";
+// import { Product } from "./models/product.model";
 
 
 let data = new DataHelper(["category", "product"]);

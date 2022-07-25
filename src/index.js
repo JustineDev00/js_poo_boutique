@@ -9,9 +9,9 @@
 // TO DO : étape 7 : réaliser une page d’accueil de boutique qui présente toutes les catégories TESTER en DEBUG !
 // TO DO : étape 8 : réaliser une page qui présente les produits correspondant à une catégorie TESTER en DEBUG !
 
-import { DataHelper } from "./helper/datahelper.helper";
-import { Category } from "./models/category.model";
-import { Product } from "./models/product.model";
+import { DataHelper } from "./helper/datahelper.helper.js";
+import { Category } from "./models/category.model.js";
+import { Product } from "./models/product.model.js";
 
 let data = new DataHelper(["category", "product"]);
 // data.initDataStorage();

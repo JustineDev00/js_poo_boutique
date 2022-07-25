@@ -1,4 +1,4 @@
-import {DataHelper} from "../helper/datahelper.helper";
+import {DataHelper} from "../helper/datahelper.helper.js";
 
 export class Category{
     id = -1;
