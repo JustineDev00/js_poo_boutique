@@ -29,6 +29,12 @@ function DisplayProductList(cat_id) {
         const cardTemp = document.querySelector('.card-template').cloneNode(true);
         cardTemp.removeAttribute("hidden");
         cardTemp.classList.remove('card-template')
+        cardTemp.querySelector('#addtocart').addEventListener('click', () => {
+            let offcanvas = document.querySelector('.offcanvas');
+            
+
+
+        })
         for (const prop in product) {
             if (prop == 'title') {
                 cardTemp.querySelector('.card-title').innerText = `${product[prop]}`;
